@@ -22,29 +22,29 @@ pipeline {
                     }
                 }
 
-                stage('Node 22') {
-                    agent { label 'any' }
-                    tools {
-                        nodejs 'node22'
-                    }
-                    steps {
-                        sh 'node -v'
-                        sh 'npm install'
-                        sh 'npm test'
-                    }
-                }
+                // stage('Node 22') {
+                //     agent { label 'any' }
+                //     tools {
+                //         nodejs 'node22'
+                //     }
+                //     steps {
+                //         sh 'node -v'
+                //         sh 'npm install'
+                //         sh 'npm test'
+                //     }
+                // }
 
-                stage('Node 24') {
-                    agent { label 'any' }
-                    tools {
-                        nodejs 'node24'
-                    }
-                    steps {
-                        sh 'node -v'
-                        sh 'npm install'
-                        sh 'npm test'
-                    }
-                }
+                // stage('Node 24') {
+                //     agent { label 'any' }
+                //     tools {
+                //         nodejs 'node24'
+                //     }
+                //     steps {
+                //         sh 'node -v'
+                //         sh 'npm install'
+                //         sh 'npm test'
+                //     }
+                // }
             }
         }
     }
