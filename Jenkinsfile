@@ -14,7 +14,7 @@ pipeline {
         stage('Use Node.js') {
             steps {
                 // Instala la versión de Node.js. Asegúrate de tener el plugin NodeJS instalado en Jenkins.
-                tool name: 'node18', type: 'hudson.plugins.nodejs.tools.NodeJsInstallation'
+                tool name: 'node24', type: 'hudson.plugins.nodejs.tools.NodeJsInstallation'
                 // 'node24' debe ser el nombre que le diste a tu instalación de Node.js 18 en 'Manage Jenkins -> Global Tool Configuration'.
             }
         }
